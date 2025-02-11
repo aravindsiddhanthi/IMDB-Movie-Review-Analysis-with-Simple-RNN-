@@ -1,0 +1,21 @@
+
+
+encounters: 
+
+It looks like the embedding_5 layer in your Sequential model is not properly built yet,
+ which is why the parameter count is 0 and the output shape is unknown (?). Here are a few possible reasons and solutions:
+
+Possible Reason:
+
+
+You haven't specified the input shape correctly.
+
+In Keras, some layers (like Embedding) are not automatically built unless the input shape is provided explicitly.
+
+You're using Sequential() but haven't added layers properly.
+
+If your model is defined but not built correctly, it might not show the expected number of parameters.
+
+The model hasn't been compiled or received input yet.
+
+Some layers remain unbuilt until they receive an actual input
